@@ -1,0 +1,93 @@
+<mat-card class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Text</mat-label>
+    <input matInput />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>User</mat-label>
+    <input matInput />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>City</mat-label>
+    <input matInput />
+  </mat-form-field>
+  <div>
+    <button mat-raised-button color="primary" onclick="getText()" class="btn">
+      Done
+    </button>
+  </div>
+</mat-card>
+
+<mat-card class="example-form list-card">
+  <mat-card-content class="list">
+    <h4>Posts by User Preethi:</h4>
+    <mat-list role="list">
+      <mat-list-item mat-line role="listitem">
+        <h4 matLine>Hello</h4>
+        <!-- <span class="mat-button-wrapper action">
+              <mat-icon _ngcontent-c0="" class="mat-icon material-icons" role="img" aria-hidden="true">more_vert</mat-icon>
+            </span> -->
+        <i style="font-size:24px" class="fa">&#xf138;</i>
+      </mat-list-item>
+      <h6 matLine class="reply-msg">Hi Preethi</h6>
+
+      <mat-divider class="example-form"></mat-divider>
+      <mat-list-item role="listitem">
+        <h4 matLine>How are you</h4>
+        <a (click)="openDialogReply()" class="reply">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"
+            />
+          </svg>
+        </a>
+
+        <!-- <span class="mat-button-wrapper action">
+              <mat-icon _ngcontent-c0="" class="mat-icon material-icons" role="img" aria-hidden="true">more_vert</mat-icon>
+            </span> -->
+        <a (click)="openDialog()"
+          ><i style="font-size:24px" class="fa">&#xf138;</i>
+        </a>
+      </mat-list-item>
+      <mat-divider class="example-form"></mat-divider>
+
+      <mat-list-item role="listitem">
+        <h4 matLine>Bye</h4>
+        <a href="" class="reply">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"
+            />
+          </svg>
+        </a>
+        <!-- <span class="mat-button-wrapper action">
+              <mat-icon _ngcontent-c0="" class="mat-icon material-icons" role="img" aria-hidden="true">more_vert</mat-icon>
+            </span> -->
+        <a (click)="openDialog()"
+          ><i style="font-size:24px" class="fa">&#xf138;</i>
+        </a>
+      </mat-list-item>
+      <!-- <mat-action-list>
+        <button mat-list-item (click)="save()"> Save </button>
+        <button mat-list-item (click)="undo()"> Undo </button>
+      </mat-action-list> -->
+    </mat-list>
+  </mat-card-content>
+</mat-card>
+
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
+<!-- Copyright 2020 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
